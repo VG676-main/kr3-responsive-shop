@@ -31,3 +31,8 @@ Lighthouse → Accessibility.
 ## Автор
 
 Груздев В. Е., ЭФБО-10-25
+
+## A11y
+
+Проверены: skip-link, подписи полей, alt, фокус, aria у меню.
+
