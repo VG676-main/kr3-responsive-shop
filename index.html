@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Лепесток — доставка свежих букетов. Розы, тюльпаны и сборные композиции.">
+  <title>Лепесток — главная</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="index.html">Лепесток</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Меню</button>
+      <nav id="main-nav" class="nav" aria-label="Основное меню">
+        <ul class="nav__list">
+          <li><a class="nav__link nav__link--active" href="index.html">Главная</a></li>
+          <li><a class="nav__link" href="catalog.html">Каталог</a></li>
+          <li><a class="nav__link" href="product.html">Букет</a></li>
+          <li><a class="nav__link" href="order.html">Заявка</a></li>
+          <li><a class="nav__link" href="contacts.html">Контакты</a></li>
+          <li><a class="nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li><a class="nav__link" href="index.html#popular">Популярное</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">Свежие букеты с доставкой по городу</h1>
+          <p class="hero__text">
+            Магазин «Лепесток» собирает букеты в день заказа. Можно выбрать готовый вариант
+            или оставить заявку — подскажем по составу и бюджету.
+          </p>
+          <div class="hero__actions">
+            <a class="button" href="catalog.html">Смотреть каталог</a>
+            <button class="button button--ghost" type="button" data-open-modal>Быстрая заявка</button>
+          </div>
+        </div>
+        <img class="hero__image" src="images/hero.svg" alt="Букеты магазина Лепесток">
+      </div>
+    </section>
+
+    <section class="section" id="advantages">
+      <div class="container">
+        <h2 class="section__title">Почему мы</h2>
+        <p class="section__text">Коротко о том, как устроена работа магазина.</p>
+        <div class="advantages">
+          <article class="advantage">
+            <h3 class="advantage__title">Свежий срез</h3>
+            <p class="advantage__text">Цветы привозят утром, букеты собираем перед отправкой.</p>
+          </article>
+          <article class="advantage">
+            <h3 class="advantage__title">Доставка</h3>
+            <p class="advantage__text">Курьер привезёт заказ в удобный интервал по городу.</p>
+          </article>
+          <article class="advantage">
+            <h3 class="advantage__title">Помощь с выбором</h3>
+            <p class="advantage__text">Если не знаете состав — напишите повод и бюджет.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="popular">
+      <div class="container">
+        <h2 class="section__title">Популярные букеты</h2>
+        <p class="section__text">Несколько позиций, которые чаще всего заказывают.</p>
+        <div class="products">
+          <article class="product-card product-card--hit">
+            <img class="product-card__image" src="images/bouquet-rose.svg" alt="Букет из красных роз">
+            <div class="product-card__body">
+              <h3 class="product-card__title">Классика роз</h3>
+              <p class="product-card__price">2 900 ₽</p>
+              <p class="product-card__text">11 роз в крафте, лента на выбор.</p>
+              <div class="product-card__actions">
+                <a class="button" href="product.html">Подробнее</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img class="product-card__image" src="images/bouquet-tulip.svg" alt="Букет тюльпанов">
+            <div class="product-card__body">
+              <h3 class="product-card__title">Тюльпаны</h3>
+              <p class="product-card__price">2 200 ₽</p>
+              <p class="product-card__text">15 тюльпанов, спокойная пастель.</p>
+              <div class="product-card__actions">
+                <a class="button" href="catalog.html">В каталог</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img class="product-card__image" src="images/bouquet-mix.svg" alt="Смешанный букет">
+            <div class="product-card__body">
+              <h3 class="product-card__title">Весенний микс</h3>
+              <p class="product-card__price">3 400 ₽</p>
+              <p class="product-card__text">Розы, эустома и зелень.</p>
+              <div class="product-card__actions">
+                <a class="button" href="order.html">Оставить заявку</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__inner">
+      <p class="footer__text">© 2026 Лепесток · учебный проект</p>
+      <p class="footer__text">
+        <a href="contacts.html">Контакты</a> ·
+        <a href="order.html">Заявка</a>
+      </p>
+    </div>
+  </footer>
+
+  <div class="modal" id="order-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__dialog">
+      <button class="modal__close" type="button" data-close-modal aria-label="Закрыть">×</button>
+      <h2 class="modal__title" id="modal-title">Быстрая заявка</h2>
+      <form class="form" id="modal-order-form" novalidate>
+        <p class="form__hint">Поля со звёздочкой обязательны.</p>
+        <div class="form__group">
+          <label class="form__label" for="modal-name">Имя *</label>
+          <input class="form__input" id="modal-name" name="name" type="text" required>
+          <span class="form__error"></span>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="modal-phone">Телефон *</label>
+          <input class="form__input" id="modal-phone" name="phone" type="tel" placeholder="+7 ..." required>
+          <span class="form__error"></span>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="modal-message">Комментарий</label>
+          <textarea class="form__textarea" id="modal-message" name="message" rows="3"></textarea>
+          <span class="form__error"></span>
+        </div>
+        <button class="button" type="submit">Отправить</button>
+        <p class="form__success">Заявка принята. Мы перезвоним.</p>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

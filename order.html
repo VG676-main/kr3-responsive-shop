@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Оставьте заявку на букет в магазине Лепесток.">
+  <title>Лепесток — заявка</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="index.html">Лепесток</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Меню</button>
+      <nav id="main-nav" class="nav" aria-label="Основное меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Главная</a></li>
+          <li><a class="nav__link" href="catalog.html">Каталог</a></li>
+          <li><a class="nav__link" href="product.html">Букет</a></li>
+          <li><a class="nav__link nav__link--active" href="order.html">Заявка</a></li>
+          <li><a class="nav__link" href="contacts.html">Контакты</a></li>
+          <li><a class="nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li><a class="nav__link" href="index.html#popular">Популярное</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a>
+        <span>Заявка</span>
+      </nav>
+
+      <h1 class="section__title">Заявка на букет</h1>
+      <p class="section__text">Заполните форму — перезвоним и уточним детали.</p>
+
+      <form class="form" id="order-form" novalidate>
+        <p class="form__hint">Поля со звёздочкой обязательны. Данные никуда не отправляются — это учебный пример.</p>
+
+        <div class="form__group">
+          <label class="form__label" for="name">Имя *</label>
+          <input class="form__input" id="name" name="name" type="text" required>
+          <span class="form__error"></span>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="phone">Телефон *</label>
+          <input class="form__input" id="phone" name="phone" type="tel" placeholder="+7 900 000-00-00" required>
+          <span class="form__error"></span>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="bouquet">Букет</label>
+          <select class="form__select" id="bouquet" name="bouquet">
+            <option value="roses">Классика роз</option>
+            <option value="tulips">Тюльпаны</option>
+            <option value="mix">Весенний микс</option>
+            <option value="custom">Свой вариант</option>
+          </select>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="message">Комментарий *</label>
+          <textarea class="form__textarea" id="message" name="message" rows="4" required placeholder="Повод, бюджет, адрес доставки"></textarea>
+          <span class="form__error"></span>
+        </div>
+
+        <button class="button" type="submit">Отправить заявку</button>
+        <p class="form__success">Спасибо! Заявка сохранена локально в браузере как пример.</p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__text">© 2026 Лепесток · учебный проект</p>
+      <p class="footer__text"><a href="contacts.html">Контакты</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

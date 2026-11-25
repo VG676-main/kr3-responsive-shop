@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог букетов магазина Лепесток: розы, тюльпаны, смешанные композиции.">
+  <title>Лепесток — каталог</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="index.html">Лепесток</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Меню</button>
+      <nav id="main-nav" class="nav" aria-label="Основное меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Главная</a></li>
+          <li><a class="nav__link nav__link--active" href="catalog.html">Каталог</a></li>
+          <li><a class="nav__link" href="product.html">Букет</a></li>
+          <li><a class="nav__link" href="order.html">Заявка</a></li>
+          <li><a class="nav__link" href="contacts.html">Контакты</a></li>
+          <li><a class="nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li><a class="nav__link" href="index.html#popular">Популярное</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a>
+        <span>Каталог</span>
+      </nav>
+
+      <h1 class="section__title">Каталог букетов</h1>
+      <p class="section__text">Выберите готовый букет или перейдите к заявке.</p>
+
+      <div class="catalog-layout">
+        <aside class="catalog-filters">
+          <h2 class="catalog-filters__title">Категории</h2>
+          <ul class="catalog-filters__list">
+            <li><a class="catalog-filters__link catalog-filters__link--active" href="catalog.html">Все букеты</a></li>
+            <li><a class="catalog-filters__link" href="catalog.html#roses">Розы</a></li>
+            <li><a class="catalog-filters__link" href="catalog.html#tulips">Тюльпаны</a></li>
+            <li><a class="catalog-filters__link" href="catalog.html#mix">Миксы</a></li>
+          </ul>
+        </aside>
+
+        <section class="catalog-products" aria-label="Список букетов">
+          <div class="products">
+            <article class="product-card product-card--hit" id="roses">
+              <img class="product-card__image" src="images/bouquet-rose.svg" alt="Букет из красных роз">
+              <div class="product-card__body">
+                <h2 class="product-card__title">Классика роз</h2>
+                <p class="product-card__price">2 900 ₽</p>
+                <p class="product-card__text">11 роз, крафт, лента.</p>
+                <div class="product-card__actions">
+                  <a class="button" href="product.html">Открыть</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" id="tulips">
+              <img class="product-card__image" src="images/bouquet-tulip.svg" alt="Букет тюльпанов">
+              <div class="product-card__body">
+                <h2 class="product-card__title">Тюльпаны</h2>
+                <p class="product-card__price">2 200 ₽</p>
+                <p class="product-card__text">15 штук, пастельные тона.</p>
+                <div class="product-card__actions">
+                  <a class="button" href="order.html">Заказать</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" id="mix">
+              <img class="product-card__image" src="images/bouquet-mix.svg" alt="Смешанный букет">
+              <div class="product-card__body">
+                <h2 class="product-card__title">Весенний микс</h2>
+                <p class="product-card__price">3 400 ₽</p>
+                <p class="product-card__text">Розы, эустома, зелень.</p>
+                <div class="product-card__actions">
+                  <a class="button" href="order.html">Заказать</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__text">© 2026 Лепесток · учебный проект</p>
+      <p class="footer__text"><a href="contacts.html">Контакты</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

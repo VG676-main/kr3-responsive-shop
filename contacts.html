@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Контакты цветочного магазина Лепесток: адрес, телефон, время работы.">
+  <title>Лепесток — контакты</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="index.html">Лепесток</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Меню</button>
+      <nav id="main-nav" class="nav" aria-label="Основное меню">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html">Главная</a></li>
+          <li><a class="nav__link" href="catalog.html">Каталог</a></li>
+          <li><a class="nav__link" href="product.html">Букет</a></li>
+          <li><a class="nav__link" href="order.html">Заявка</a></li>
+          <li><a class="nav__link nav__link--active" href="contacts.html">Контакты</a></li>
+          <li><a class="nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li><a class="nav__link" href="index.html#popular">Популярное</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a>
+        <span>Контакты</span>
+      </nav>
+
+      <h1 class="section__title">Контакты</h1>
+      <p class="section__text">Можно написать или зайти в точку самовывоза.</p>
+
+      <div class="contacts-grid">
+        <div class="contacts-card">
+          <h2 class="contacts-card__title">Магазин</h2>
+          <p class="contacts-card__text">г. Москва, ул. Цветочная, 12</p>
+          <p class="contacts-card__text">Пн–Вс: 9:00–21:00</p>
+          <p class="contacts-card__text">Тел.: +7 (495) 000-12-34</p>
+          <p class="contacts-card__text">Email: hello@lepestok.local</p>
+        </div>
+
+        <form class="form" id="contacts-form" novalidate>
+          <h2 class="contacts-card__title">Написать нам</h2>
+          <p class="form__hint">Короткое сообщение. Поля со звёздочкой обязательны.</p>
+
+          <div class="form__group">
+            <label class="form__label" for="c-name">Имя *</label>
+            <input class="form__input" id="c-name" name="name" type="text" required>
+            <span class="form__error"></span>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="c-phone">Телефон *</label>
+            <input class="form__input" id="c-phone" name="phone" type="tel" required>
+            <span class="form__error"></span>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="c-message">Сообщение *</label>
+            <textarea class="form__textarea" id="c-message" name="message" rows="4" required></textarea>
+            <span class="form__error"></span>
+          </div>
+
+          <button class="button" type="submit">Отправить</button>
+          <p class="form__success">Сообщение принято (учебный пример без отправки на сервер).</p>
+        </form>
+      </div>
+
+      <p style="margin-top: 24px;">
+        <a class="button button--ghost" href="index.html#contacts">К блоку на главной</a>
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__text">© 2026 Лепесток · учебный проект</p>
+      <p class="footer__text"><a href="order.html">Заявка</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
